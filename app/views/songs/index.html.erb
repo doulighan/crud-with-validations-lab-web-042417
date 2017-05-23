@@ -1,0 +1,13 @@
+
+<ul>
+<% @songs.each do |song| %>
+<div class="song">
+<li><%= song.title %></li>
+<li><%= song.release_year %></li>
+<li><%= song.genre %></li>
+<li><%= song.artist_name %></li>
+  <p>
+  <%= link_to 'Delete', song, method: :delete, data: { confirm: 'For real?' } %> </p>
+</div>
+<% end %></li>
+
